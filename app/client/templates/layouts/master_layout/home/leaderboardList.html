@@ -1,0 +1,22 @@
+<template name="leaderboard">
+
+		<br><br>
+		<button>Click Me</button>
+	  	<p>You've pressed the button {{counter}} times.</p>
+	  	<br>
+
+	  	 <div>
+			<ul>
+			    {{#each player}}
+			        <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
+			    {{/each}}
+			</ul>
+		</div>
+
+		<br>
+		Player : {{#if showSelectedPlayer}} {{showSelectedPlayer.name}} {{/if}} 
+		<input type="button" class="increment" value="Give 5 Points">
+		<input type="button" class="decrement" value="Take 5 Points">
+		<input type="button" class="remove" value="Remove this player">
+
+</template>

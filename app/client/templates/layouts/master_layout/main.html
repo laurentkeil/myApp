@@ -1,0 +1,12 @@
+<template name="main">
+    <h1>Meteor</h1>
+    {{> navigation}}
+    {{#if currentUser}}
+        {{> lists}}
+    {{/if}}
+    <br/>
+    {{> yield}}
+    <br/>
+    <hr />
+    <p>Copyright &copy; Keil, 2015.</p>
+</template>
